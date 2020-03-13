@@ -1,10 +1,10 @@
 package com.maicai.controller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RequestMapping("/test")
-@Controller("testController")
+@RestController
 public class TestController {
 
 
