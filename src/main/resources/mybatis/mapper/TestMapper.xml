@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.maicai.mapper.TestMapper">
+
+	<!-- 测试 -->
+	<select id="test" resultType="java.lang.String">
+	select 'hello World' from dual
+	</select>
+	
+</mapper>
