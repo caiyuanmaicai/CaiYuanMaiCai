@@ -7,4 +7,43 @@
 	select 'hello World' from dual
 	</select>
 	
+	<!-- select 带参数 -->
+	<select id="testWithParam" resultType="java.lang.String">
+	SELECT to_char(SYSDATE, 'yyyy-MM-dd') FROM TEST WHERE SELL_ADDR = ${_parameter} 
+	</select>
+	
+	<!-- select 带参数 -->
+	<select id="testWithParam1" parameterType="com.maicai.entity.Test" resultType="java.lang.String">
+	SELECT SYSDATE FROM TEST WHERE SELL_ADDR = ${sellAddr}
+	</select>
+	
+	<!-- select 带参数 -->
+	<select id="testWithParam2" resultType="java.lang.String">
+	SELECT SYSDATE FROM TEST WHERE SELL_ADDR = ${paramA}
+	</select>
+	
+	<!-- select 带参数 -->
+	<select id="testWithParam3" resultType="java.lang.String">
+	</select>
+	
+	
+	<!-- select 带参数 -->
+	<select id="testWithParam3" resultType="com.maicai.entity.Test">
+	select * from Test
+	</select>
+	
+	<!-- insert -->
+	<insert id="testWithParam2">
+	SELECT SYSDATE FROM TEST WHERE SELL_ADDR = ${paramA} 
+	</insert>
+	
+	<!-- update -->
+	<update id="">
+	</update>
+	
+	<!-- update -->
+	<delete id="">
+	</delete>
+	
+	
 </mapper>
