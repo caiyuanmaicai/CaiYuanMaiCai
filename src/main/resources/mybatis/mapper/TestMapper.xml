@@ -8,7 +8,7 @@
 	</select>
 	
 	<!-- select 带参数 -->
-	<select id="testWithParam" resultType="java.lang.String">
+	<select id="testWithParam" parameterType="java.lang.String" resultType="java.lang.String">
 	SELECT to_char(SYSDATE, 'yyyy-MM-dd') FROM TEST WHERE SELL_ADDR = ${_parameter} 
 	</select>
 	
