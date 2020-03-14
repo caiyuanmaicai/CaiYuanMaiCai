@@ -8,5 +8,6 @@ public class CaiYuanMaiCai {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CaiYuanMaiCai.class, args);
+
 	}
 }
