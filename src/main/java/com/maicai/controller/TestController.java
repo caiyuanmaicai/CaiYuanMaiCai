@@ -10,8 +10,8 @@ public class TestController {
 
 	@RequestMapping("/test")
 	public String test() {
-		
-		return "hello World";
+
+		return "hello World，You can sell or buy vegetables here ";
 	}
 	
 }
