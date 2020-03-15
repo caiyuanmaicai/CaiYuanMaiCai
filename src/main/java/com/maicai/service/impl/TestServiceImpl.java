@@ -24,7 +24,7 @@ public class TestServiceImpl implements TestService {
 		String testS = testMapper.test();
 		System.out.println(testS);
 
-		// 测试查询--不注解， _param
+	/*	// 测试查询--不注解， _param
 		String testWithParam = testMapper.testWithParam("1");
 		System.out.println(testWithParam);
 		// 测试查询--不注解，bean带类型
@@ -52,7 +52,7 @@ public class TestServiceImpl implements TestService {
 
 		Integer testDelete = testMapper.testDelete("1", test);
 		System.out.println(testDelete);
-
+*/
 		return "";
 	}
 

@@ -14,7 +14,7 @@
 	
 	<!-- select 带参数 -->
 	<select id="testWithParam1" parameterType="com.maicai.entity.Test" resultType="java.lang.String">
-	SELECT SYSDATE FROM TEST WHERE SELL_ADDR = ${sellAddr}
+	SELECT SYSDATE FROM TEST WHERE SELL_ADDR = ${test.sellAddr}
 	</select>
 	
 	<!-- select 带参数 -->
@@ -38,11 +38,11 @@
 	</insert>
 	
 	<!-- update -->
-	<update id="">
+	<update id="testUpdate">
 	</update>
 	
 	<!-- update -->
-	<delete id="">
+	<delete id="testDelete">
 	</delete>
 	
 	
