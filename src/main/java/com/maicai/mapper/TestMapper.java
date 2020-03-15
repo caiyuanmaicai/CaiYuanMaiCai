@@ -18,7 +18,7 @@ public interface TestMapper {
 
 	public String testWithParam1(Test test);
 	
-	//测试带参数2
+	//测试带参数2带注解的
 	public String testWithParam2(@Param("paramA") String p1);
 
 	// 测试带参数
